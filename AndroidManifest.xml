@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="k.daniel.timedtask"
+    android:installLocation="auto"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" >
+    </permission>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 允许程序读取或写入系统设置 -->
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name="k.daniel.timedtask.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/clock"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="k.daniel.timedtask.activity.CreateTaskActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="k.daniel.timedtask.activity.TaskListActivity"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="k.daniel.timedtask.activity.SettingActivity" >
+        </activity>
+
+        <receiver android:name="k.daniel.timedtask.receiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="k.daniel.timedtask.CreateTaskService" >
+        </service>
+
+        <receiver
+            android:name="k.daniel.timedtask.receiver.ProcessTaskReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="k.daniel.timedtask.ProcessTask" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="k.daniel.timedtask.AboutDialogActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+    </application>
+
+</manifest>

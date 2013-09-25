@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">定时任务</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="content_executed">执行</string>
+    <string name="notification_title_timedtask">TimedTask</string>
+    <string name="about_author">作者:Daniel</string>
+    <string name="about_content">软件实现了简单的模式切换，如果您有其他的意见或建议，请联系我。</string>
+    <string name="create_task_execute_day">执行周期:</string>
+    <string name="string_monday">一</string>
+    <string name="string_tuesday">二</string>
+    <string name="string_wednesday">三</string>
+    <string name="string_thursday">四</string>
+    <string name="string_friday">五</string>
+    <string name="string_saturday">六</string>
+    <string name="string_sunday">日</string>
+    <string name="string_create">创建</string>
+    <string name="string_cancle">取消</string>
+    <string name="create_task_type">任务类型</string>
+    <string name="create_avaliable">启用状态</string>
+    <string name="create_execute_time">执行时间</string>
+
+    <string name="string_save">保存</string>
+    <string name="类型">类型:</string>
+    <string name="list_item_type">类型:</string>
+    <string name="list_item_time">时间:</string>
+    <string name="list_item_week">周期:</string>
+    
+    
+    <string name="menu_about">关于</string>
+    <string name="menu_create_task">创建任务</string>
+    	<string name="menu_setting">设置</string>
+	<string name="setting_title_language">语言</string>
+	<string name="menu_exit">退出</string>
+	<string name="string_everyday">每天</string>
+</resources>

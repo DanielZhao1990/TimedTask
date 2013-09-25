@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="language_code">
+        <item>en</item>
+        <item>zh-CN</item>
+    </string-array>
+    
+    <string-array name="task_type_value">
+        <item>响铃+振动</item>
+        <item>静音</item>
+        <item>振动</item>
+        <item>响铃</item>
+        <item>开启飞行模式</item>
+        <item>关闭飞行模式</item>
+        <item>开启Wifi</item>
+        <item>关闭Wifi</item>
+    </string-array>
+    <string-array name="task_week">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>日</item>
+    </string-array>
+
+</resources>

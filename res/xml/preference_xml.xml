@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="System Setting" >
+
+ <!--        编辑框，注意Key值，Key是数据在Sp文件里的存储key，也是触发OnChangedListener时用到的key
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="isAutoStart"
+            android:summaryOff="App will not auto start,when restart machine,this app will not work."
+            android:summaryOn="App will auto start"
+            android:title="Auto Start" />
+ -->
+        <ListPreference
+            android:key="language"
+            android:defaultValue="0"
+            android:title="@string/setting_title_language" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
